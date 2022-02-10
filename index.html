@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <!--responsividade-->
+  <link rel="stylesheet" href="styles/responsive.css">
+  <!--owl css-->
+  <link rel="stylesheet" href="styles/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css">
+  <title>CCFlix</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2 class="logo">CCFlix</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Series</a>
+        <a href="#">Documentaries</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="container">
+        <h3 class="title">Enjoy the creativity!</h3>
+        <p class="description">Here you'll find a collection of awesome Creative Commons productions. Feel free to explore!</p>
+        <div class="bottons">
+          <a href="#carousel-1">
+            <button role="button" class="botton">
+              <i class="fas fa-play"></i>
+              Watch now
+            </button>
+          </a>
+          <a href="about.html">
+            <button role="button" class="botton">
+              <i class="fas fa-info-circle"></i>
+              More info
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="carrosel-filmes">
+    <div class="owl-carousel owl-theme" id="carousel-1">
+      <script>
+        var carousel = document.getElementById("carousel-1");
+        carousel.innerHTML = [
+          ["4F5oD7G40ng", 'Eu sinto sua falta'],
+          ["y79X8qvfQzM", 'Longshot'],
+          ["Ec8SVEFAnUk", 'Lockdown'],
+          ["Panc060B4p4", 'Late For Class'],
+          ["DLl4UyxaxN4", 'Script'],
+          ["KLc3_MlCzIM", 'Holding'],
+          ["32TEGa_YqM8", 'Game'],
+          ["0Uz7e9iLK9E", 'COPYRIGHT!'],
+          ["46LYCr8STUo", 'The Job Interview']
+        ].map( video => {
+          let [id, title] = video
+          return (
+            '<div class="item">\n' +
+              '<a href="video/' + id + '.html">\n' +
+                '<img class="box-filme" src="img/' + id + '.webp" alt="" srcset="">\n' +
+                '<h4>' + title + '</h4>\n'+
+              '</a>\n' +
+            '</div>'
+          )
+        }).join('')
+      </script>
+    </div>
+    <div class="owl-carousel owl-theme" id="carousel-2">
+      <script>
+        var carousel = document.getElementById("carousel-2");
+        carousel.innerHTML = [
+          ["eU2H3V3QWg4", 'Best Kungfu Master'],
+          ["-PuXZIUkiDk", 'Kung Fu Martial Arts'],
+          ["Ut37-tudA9M", 'Woman Warriors'],
+          ["aX6WTAYSz-s", 'Ronal The Barbarian'],
+          ["q7SBRS5jrwU", 'Avengers - The Key'],
+          ["FVFPRstvlvk", 'Avengers - Endgame - 8 Minute Trailers'],
+          ["YhtGyCBqisc", 'Robot Lover'],
+          ["0dHjgFiISLk", 'Every Praise - Hezekiah Walker'],
+          ["fsC_wGBn_dg", 'Sintel']
+        ].map( video => {
+          let [id, title] = video
+          return (
+            '<div class="item">\n' +
+              '<a href="video/' + id + '.html">\n' +
+                '<img class="box-filme" src="img/' + id + '.webp" alt="" srcset="">\n' +
+                '<h4>' + title + '</h4>\n'+
+              '</a>\n' +
+            '</div>'
+          )
+        }).join('')
+      </script>
+    </div>
+    <div class="owl-carousel owl-theme" id="carousel-3">
+      <script>
+        var carousel = document.getElementById("carousel-3");
+        carousel.innerHTML = [
+          ["vuwfYoyxGis", 'Big Buck Bunny'],
+          ["oXSyCF5pyR4", 'Fathers Little Dividend'],
+          ["_vilvh-9b24", '1947 Blow Ups'],
+          ["6OYpz5IGrW4", 'Return of the Kung Fu Dragon'],
+          ["W3H08EV04WA", 'Oceania'],
+          ["I9wxP0nkBDk", 'Africa Screams'],
+          ["GcWEuxZodoo", 'Elephants Dream'],
+          ["PwKPqx1J_7M", 'Most Dangerous Game'],
+          ["Y2l8IQ1pt_U", 'Cyrano De Bergerac']
+        ].map( video => {
+          let [id, title] = video
+          return (
+            '<div class="item">\n' +
+              '<a href="video/' + id + '.html">\n' +
+                '<img class="box-filme" src="img/' + id + '.webp" alt="" srcset="">\n' +
+                '<h4>' + title + '</h4>\n'+
+              '</a>\n' +
+            '</div>'
+          )
+        }).join('')
+      </script>
+    </div>
+    <div class="owl-carousel owl-theme" id="carousel-4">
+      <script>
+        var carousel = document.getElementById("carousel-4");
+        carousel.innerHTML = [
+          ["SCN_FYk4uCM", 'Jack and the Beanstalk'],
+          ["FrFiBduFpZs", 'Great Expectations'],
+          ["Rzc6F9WHZes", 'Concrete Cowboys'],
+          ["zB6IoDIvKCk", 'Rescue from Gilligans Island'],
+          ["2JyGR7nxPU0", 'Three Stooges - Color Craziness'],
+          ["MRXqVkUfnA4", 'Tarzans Revenge'],
+          ["fAUt6nfETsU", 'Liane Jungle Goddess'],
+          ["yGNBZ4vyIYQ", 'Jungle Book'],
+          ["8U7SV2g9xT8", 'Gullivers Travels']
+        ].map( video => {
+          let [id, title] = video
+          return (
+            '<div class="item">\n' +
+              '<a href="video/' + id + '.html">\n' +
+                '<img class="box-filme" src="img/' + id + '.webp" alt="" srcset="">\n' +
+                '<h4>' + title + '</h4>\n'+
+              '</a>\n' +
+            '</div>'
+          )
+        }).join('')
+      </script>
+    </div>
+    <div class="owl-carousel owl-theme" id="carousel-5">
+      <script>
+        var carousel = document.getElementById("carousel-5");
+        carousel.innerHTML = [
+          ["X_Rt5hY1fAo", 'Driller Killer Uncut'],
+          ["piCKzaHsTHk", 'Outlaw'],
+          ["MoRJF862Cko", 'At War With The Army'],
+          ["ddROL8yybi4", 'Son of Hercules The Land of Darkness'],
+          ["U-Iv_4AUY34", 'Meet John Doe'],
+          ["M0LDQgW1jgc", "Brain That Wouldn't Die"],
+          ["YkmtImveXds", 'Big Trees'],
+          ["XspYaTqqHvo", 'Hercules and the Captive Women'],
+          ["Mbb-jTEEOpA", 'Transfer']
+        ].map( video => {
+          let [id, title] = video
+          return (
+            '<div class="item">\n' +
+              '<a href="video/' + id + '.html">\n' +
+                '<img class="box-filme" src="img/' + id + '.webp" alt="" srcset="">\n' +
+                '<h4>' + title + '</h4>\n'+
+              '</a>\n' +
+            '</div>'
+          )
+        }).join('')
+      </script>
+    </div>
+    <div class="owl-carousel owl-theme" id="carousel-6">
+      <script>
+        var carousel = document.getElementById("carousel-6");
+        carousel.innerHTML = [
+          ["hyScFQzBVWQ", '1000 Days'],
+          ["5mbYqHA0s5Y", 'Oceania'],
+          ["u02xoiFmml8", 'Route 66'],
+          ["WxdfU_KV_UE", 'Catastroika'],
+          ["F6dKtE4-D6c", 'Nasty Old People'],
+          ["SlnwjLrczLQ", 'Farewell to Arms'],
+          ["TfvdkiQJX1I", 'Africa Screams'],
+          ["YFs4u95CDdQ", 'Voyage to the Prehistoric Planet'],
+          ["OSkOOqMicS8", 'Carniva Of Souls']
+        ].map( video => {
+          let [id, title] = video
+          return (
+            '<div class="item">\n' +
+              '<a href="video/' + id + '.html">\n' +
+                '<img class="box-filme" src="img/' + id + '.webp" alt="" srcset="">\n' +
+                '<h4>' + title + '</h4>\n'+
+              '</a>\n' +
+            '</div>'
+          )
+        }).join('')
+      </script>
+    </div>
+    <div class="owl-carousel owl-theme" id="carousel-7">
+      <script>
+        var carousel = document.getElementById("carousel-7");
+        carousel.innerHTML = [
+          ["l-sd4xp7Zjk", 'The House On Haunted Hill'],
+          ["gEx5nRv9hJc", 'Big Buck Bunny'],
+          ["OEQ5Qo9aLHc", 'Love and Hate'],
+          ["dLqAgh1UJj4", 'Elephants Dream'],
+          ["7DDtjF4Kggo", 'Crossroads - John Doe'],
+          ["kUKQbPt3IxU", 'Charlie Chaplins - The Vagabond'],
+          ["2o4VUSkwQOQ", 'Horror Express'],
+          ["vV9FfBMIo20", 'Rocketmen Vs Robots Episode 2: Rocketmen Space Patrol']
+        ].map( video => {
+          let [id, title] = video
+          return (
+            '<div class="item">\n' +
+              '<a href="video/' + id + '.html">\n' +
+                '<img class="box-filme" src="img/' + id + '.webp" alt="" srcset="">\n' +
+                '<h4>' + title + '</h4>\n'+
+              '</a>\n' +
+            '</div>'
+          )
+        }).join('')
+      </script>
+    </div>
+  </div>
+
+  <!-- <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script> -->
+  <script src="scripts/owl/jquery.min.js"></script>
+  <script src="scripts/owl/owl.carousel.min.js"></script>
+  <script src="scripts/owl/setup.js"></script>
+</body>
+</html>
